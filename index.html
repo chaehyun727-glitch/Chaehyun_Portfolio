@@ -9,8 +9,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="김채현 — 3D Generalist Portfolio">
 <meta property="og:description" content="실시간 모션캡처 파이프라인 운영 경험을 가진 3D 제너럴리스트.">
-<!-- TODO: 배포 후 절대경로로 교체 (예: https://kimchaehyun.vercel.app/assets/og.jpg) -->
-<meta property="og:image" content="/assets/og.jpg">
+<!-- TODO: 실제 배포 주소 확인 후 필요하면 수정. assets/og.jpg 파일을 올려야 미리보기 이미지가 뜸 -->
+<meta property="og:url" content="https://chaehyun-portfolio.vercel.app/">
+<meta property="og:image" content="https://chaehyun-portfolio.vercel.app/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231b1e23'/><circle cx='16' cy='16' r='5' fill='%23e0b04a'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,6 +88,19 @@
   .work-foot{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;font-size:.86rem;color:var(--muted)}
   .work-foot b{color:var(--text);font-weight:600}
 
+  .work-link{display:inline-block;margin-top:.9rem;color:var(--accent);text-decoration:none;font-weight:600;font-size:.92rem;border-bottom:1px solid transparent}
+  .work-link:hover{border-bottom-color:var(--accent)}
+
+  /* More work */
+  .more{margin-top:4.5rem;border-top:1px solid var(--line)}
+  .more h3{font-family:var(--display);font-stretch:108%;font-size:1.2rem;padding:1.25rem 0 .5rem}
+  .more ul{list-style:none}
+  .more li a{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);text-decoration:none}
+  .more li a:hover .more-title{color:var(--accent)}
+  .more-title{font-weight:600}
+  .more-desc{display:block;color:var(--muted);font-size:.9rem;font-weight:400}
+  .more-meta{color:var(--muted);font-size:.88rem;white-space:nowrap}
+
   /* Pipeline */
   .pipe{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:4px}
   .stage{padding:1.75rem;position:relative}
@@ -156,8 +170,8 @@
       <h1>Kim<br>Chaehyun<span class="ko">김채현, 3D Generalist</span></h1>
       <p class="hero-role">모델링부터 렌더링까지 다루고, <strong>5인 실시간 모션캡처 파이프라인</strong>을 운영해본 제너럴리스트.</p>
       <div class="hero-cta">
-        <!-- TODO: 데모릴 YouTube/Vimeo 링크 -->
-        <a class="btn solid" href="#" target="_blank" rel="noopener">데모릴 보기</a>
+        <!-- TODO: 데모릴이 생기면 링크와 문구를 "데모릴 보기"로 교체 -->
+        <a class="btn solid" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener">대표작 SuperNatural 보기</a>
         <a class="btn" href="#work">작업 보기</a>
       </div>
     </div>
@@ -178,8 +192,8 @@
       <div class="work-list">
 
         <article class="work">
-          <!-- TODO: href에 영상 링크, assets 폴더에 supernatural.jpg 넣기 -->
-          <a class="thumb" href="#" target="_blank" rel="noopener">
+          <!-- TODO: assets 폴더에 supernatural.jpg 넣기 -->
+          <a class="thumb" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener" aria-label="SuperNatural 영상 보기">
             <img src="assets/supernatural.jpg" alt="SuperNatural 안무 영상 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
             <span class="ph">assets/supernatural.jpg</span>
           </a>
@@ -187,32 +201,35 @@
           <h3>SuperNatural</h3>
           <p>Motive 캡처 데이터를 MotionBuilder에서 클린업·보정해 UE5로 이관하고, Control Rig로 시선과 세부 모션을 다듬었습니다. Kawaii Physics 헤어가 두상을 관통하는 문제는 헤어 본별 Capsule Limits를 추가·조정해 해결했습니다.</p>
           <div class="work-foot"><span>MotionBuilder, UE5, Kawaii Physics</span><span><b>역할</b> 캡처 데이터부터 렌더링까지 단독</span></div>
+          <a class="work-link" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener">영상 보기</a>
         </article>
 
         <article class="work">
-          <a class="thumb" href="#" target="_blank" rel="noopener">
-            <img src="assets/boy-drone.jpg" alt="Boy&amp;Drone 시네마틱 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
+          <a class="thumb" href="https://vimeo.com/1133154566" target="_blank" rel="noopener" aria-label="Boy&amp;Drone 영상 보기">
+            <img src="assets/boy-drone.jpg" alt="Boy&amp;Drone 시네마틱 스틸" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://vumbnail.com/1133154566.jpg'}else{this.parentElement.classList.add('missing');this.remove()}">
             <span class="ph">assets/boy-drone.jpg</span>
           </a>
           <div class="work-top"><span>Dawera Academy</span><span>2025</span></div>
           <h3>Boy&amp;Drone</h3>
           <p>ZBrush 캐릭터 조형, Marvelous Designer 의상, XGen 헤어, FK/IK 리깅을 거쳐 Maya와 Unreal을 병행해 라이팅하고 Nuke로 합성한 11개월 제너럴 포트폴리오입니다.</p>
           <div class="work-foot"><span>Maya, UE5, ZBrush, Substance, Nuke</span><span><b>역할</b> 모델링부터 합성까지</span></div>
+          <a class="work-link" href="https://vimeo.com/1133154566" target="_blank" rel="noopener">영상 보기</a>
         </article>
 
         <article class="work">
-          <a class="thumb" href="#" target="_blank" rel="noopener">
-            <img src="assets/its-live.jpg" alt="it's Live 시네마틱 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
-            <span class="ph">assets/its-live.jpg</span>
+          <a class="thumb" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" target="_blank" rel="noopener" aria-label="it's Live 영상 보기">
+            <img src="https://img.youtube.com/vi/7SuDLDHfoPQ/hqdefault.jpg" alt="it's Live 시네마틱 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
+            <span class="ph">썸네일을 불러오지 못했어요</span>
           </a>
           <div class="work-top"><span>AURORA WORLD, OWIS</span><span>2026</span></div>
           <h3>it's Live</h3>
           <p>Sequencer로 카메라 컷을 구성해 시네마틱을 제작하고, Control Rig 기반 키프레임 보정과 캐릭터 애니메이션 클린업, 콘텐츠 품질 검수를 맡았습니다.</p>
           <div class="work-foot"><span>UE5 Sequencer, Control Rig</span><span><b>역할</b> 시네마틱, 애니메이션 보정</span></div>
+          <a class="work-link" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" target="_blank" rel="noopener">영상 보기</a>
         </article>
 
         <article class="work">
-          <a class="thumb" href="#" target="_blank" rel="noopener">
+          <a class="thumb" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" target="_blank" rel="noopener" aria-label="PMV 영상 보기">
             <img src="assets/pmv.jpg" alt="PMV 뮤직비디오 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
             <span class="ph">assets/pmv.jpg</span>
           </a>
@@ -220,8 +237,17 @@
           <h3>PMV</h3>
           <p>같은 모캡 파이프라인 위에서 팀으로 제작한 뮤직비디오입니다. 모션 데이터 클린업, Control Rig 동작 보정, Sequencer 편집, 라이팅·렌더링 흐름을 담당했습니다.</p>
           <div class="work-foot"><span>MotionBuilder, UE5</span><span><b>역할</b> 팀 프로젝트</span></div>
+          <a class="work-link" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" target="_blank" rel="noopener">영상 보기</a>
         </article>
 
+      </div>
+      <div class="more">
+        <h3>More work</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=GLRHbtUxuYs&amp;t=448s" target="_blank" rel="noopener"><span><span class="more-title">우쥬레코드</span><span class="more-desc">UE5 콘텐츠 제작 참여. Sequencer 편집, 음원 싱크, Hair·Cloth 시뮬레이션 베이크, 라이팅·렌더링</span></span><span class="more-meta">OWIS, 2026</span></a></li>
+          <li><a href="https://www.youtube.com/@OWIS_Official/streams" target="_blank" rel="noopener"><span><span class="more-title">OWIS 라이브 방송</span><span class="more-desc">라이브 세팅 및 모션캡처 오퍼레이터</span></span><span class="more-meta">OWIS, 2026</span></a></li>
+          <li><a href="https://www.behance.net/gallery/227900501" target="_blank" rel="noopener"><span><span class="more-title">NOMOS</span><span class="more-desc">동아리 협업 프로젝트 영상 파트 담당. 전달받은 3D·2D 소스로 After Effects 영상 제작</span></span><span class="more-meta">LFD, 2025</span></a></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -251,6 +277,7 @@
         <div><h4>세션 운영</h4><p>세션 체크리스트 운영, 씬·프로파일·캘리브레이션 파일 버전 관리.</p></div>
         <div><h4>트러블슈팅</h4><p>IP·포트·방화벽 연결 문제, Subject Name 불일치, T-Pose·Characterize 문제 대응.</p></div>
       </div>
+      <p style="margin-top:1.5rem"><a class="work-link" href="https://www.youtube.com/@OWIS_Official/streams" target="_blank" rel="noopener">이 파이프라인으로 진행한 라이브 방송 보기</a></p>
     </div>
   </section>
 
@@ -277,10 +304,9 @@
       <h2>함께 만들<br>작업이 있다면.</h2>
       <a class="mail" href="mailto:chaehyun727@gmail.com">chaehyun727@gmail.com</a>
       <div class="socials">
-        <!-- TODO: 실제 계정 링크로 교체. 없는 건 줄째로 삭제 -->
-        <a href="#" target="_blank" rel="noopener">ArtStation</a>
-        <a href="#" target="_blank" rel="noopener">YouTube</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- TODO: ArtStation 등 계정이 생기면 여기 추가 -->
+        <a href="https://www.behance.net/7957df51" target="_blank" rel="noopener">Behance</a>
+        <a href="https://vimeo.com/1133154566" target="_blank" rel="noopener">Vimeo</a>
       </div>
     </div>
   </section>
