@@ -30,6 +30,12 @@ https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view
 ## hero.button2    <- 테두리 버튼 글자
 작업 보기
 
+## hero.resume    <- 세 번째 버튼 글자
+이력서 PDF
+
+## hero.resume.link    <- 이력서 파일 경로 (assets 폴더에 넣은 파일명)
+assets/KimChaehyun_Resume.pdf
+
 
 # ========== 흐르는 키워드 띠 ==========
 
@@ -295,6 +301,12 @@ https://www.behance.net/7957df51
 
 ## social2
 Vimeo
+
+## social3
+이력서 PDF
+
+## social3.link    <- 이력서 파일 경로
+assets/KimChaehyun_Resume.pdf
 
 ## social2.link    <- 링크 주소
 https://vimeo.com/1133154566
