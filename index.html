@@ -153,168 +153,182 @@
   <div class="wrap">
     <a class="logo" href="#top">K.CH</a>
     <nav class="nav-links" aria-label="주요 메뉴">
-      <a href="#work">Work</a>
-      <a href="#pipeline">Pipeline</a>
-      <a href="#profile">Profile</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#pipeline">Pipeline</a><a href="#profile">Profile</a><a href="#contact">Contact</a>
     </nav>
-    <a class="btn" href="mailto:chaehyun727@gmail.com">연락하기</a>
+    <a class="btn" href="mailto:chaehyun727@gmail.com" data-mail>연락하기</a>
   </div>
 </header>
 
 <main id="top">
-  <!-- Hero -->
   <section class="hero" aria-label="소개">
     <div class="wrap">
-      <p class="hero-meta">Portfolio 2026, Seoul</p>
-      <h1>Kim<br>Chaehyun<span class="ko">김채현, 3D Generalist</span></h1>
-      <p class="hero-role">모델링부터 렌더링까지 다루고, <strong>5인 실시간 모션캡처 파이프라인</strong>을 운영해본 제너럴리스트.</p>
+      <p class="hero-meta" data-c="hero.meta">Portfolio 2026, Seoul</p>
+      <h1>Kim<br>Chaehyun<span class="ko" data-c="hero.subtitle">김채현, 3D Generalist</span></h1>
+      <p class="hero-role" data-c="hero.role" data-rich>모델링부터 렌더링까지 다루고, <strong>5인 실시간 모션캡처 파이프라인</strong>을 운영해본 제너럴리스트.</p>
       <div class="hero-cta">
-        <!-- TODO: 데모릴이 생기면 링크와 문구를 "데모릴 보기"로 교체 -->
-        <a class="btn solid" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener">대표작 SuperNatural 보기</a>
-        <a class="btn" href="#work">작업 보기</a>
+        <a class="btn solid" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" data-href="hero.button.link" target="_blank" rel="noopener" data-c="hero.button">대표작 SuperNatural 보기</a>
+        <a class="btn" href="#work" data-c="hero.button2">작업 보기</a>
       </div>
     </div>
   </section>
 
-  <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Motion Capture</span><span>MotionBuilder</span><span>Unreal Engine 5</span><span>Control Rig</span><span>Sequencer</span><span>Hair Simulation</span><span>Maya</span><span>ZBrush</span><span>Nuke</span>
-      <span>Motion Capture</span><span>MotionBuilder</span><span>Unreal Engine 5</span><span>Control Rig</span><span>Sequencer</span><span>Hair Simulation</span><span>Maya</span><span>ZBrush</span><span>Nuke</span>
-    </div>
+    <div class="marquee-track" data-c="marquee" data-marquee><span>Motion Capture</span><span>MotionBuilder</span><span>Unreal Engine 5</span><span>Control Rig</span><span>Sequencer</span><span>Hair Simulation</span><span>Maya</span><span>ZBrush</span><span>Nuke</span><span>Motion Capture</span><span>MotionBuilder</span><span>Unreal Engine 5</span><span>Control Rig</span><span>Sequencer</span><span>Hair Simulation</span><span>Maya</span><span>ZBrush</span><span>Nuke</span></div>
   </div>
 
-  <!-- Work -->
   <section id="work">
     <div class="wrap">
-      <div class="sec-head"><h2>Selected Work</h2><span>2024 – 2026</span></div>
+      <div class="sec-head"><h2 data-c="work.title">Selected Work</h2><span data-c="work.period">2024 – 2026</span></div>
       <div class="work-list">
-
         <article class="work">
-          <!-- TODO: assets 폴더에 supernatural.jpg 넣기 -->
-          <a class="thumb" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener" aria-label="SuperNatural 영상 보기">
+          <a class="thumb" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" data-href="supernatural.link" target="_blank" rel="noopener" aria-label="SuperNatural 영상 보기">
             <img src="assets/supernatural.jpg" alt="SuperNatural 안무 영상 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
-            <span class="ph">assets/supernatural.jpg</span>
+            <!-- 썸네일 파일: assets/supernatural.jpg -->
+            <span class="ph">영상 보기</span>
           </a>
-          <div class="work-top"><span>AURORA WORLD, OWIS</span><span>2026</span></div>
-          <h3>SuperNatural</h3>
-          <p>Motive 캡처 데이터를 MotionBuilder에서 클린업·보정해 UE5로 이관하고, Control Rig로 시선과 세부 모션을 다듬었습니다. Kawaii Physics 헤어가 두상을 관통하는 문제는 헤어 본별 Capsule Limits를 추가·조정해 해결했습니다.</p>
-          <div class="work-foot"><span>MotionBuilder, UE5, Kawaii Physics</span><span><b>역할</b> 캡처 데이터부터 렌더링까지 단독</span></div>
-          <a class="work-link" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" target="_blank" rel="noopener">영상 보기</a>
+          <div class="work-top"><span data-c="supernatural.client">AURORA WORLD, OWIS</span><span data-c="supernatural.year">2026</span></div>
+          <h3 data-c="supernatural.title">SuperNatural</h3>
+          <p data-c="supernatural.desc">Motive 캡처 데이터를 MotionBuilder에서 클린업·보정해 UE5로 이관하고, Control Rig로 시선과 세부 모션을 다듬었습니다. Kawaii Physics 헤어가 두상을 관통하는 문제는 헤어 본별 Capsule Limits를 추가·조정해 해결했습니다.</p>
+          <div class="work-foot"><span data-c="supernatural.tools">MotionBuilder, UE5, Kawaii Physics</span><span><b>역할</b> <span data-c="supernatural.role">캡처 데이터부터 렌더링까지 단독</span></span></div>
+          <a class="work-link" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" data-href="supernatural.link" target="_blank" rel="noopener">영상 보기</a>
         </article>
-
         <article class="work">
-          <a class="thumb" href="https://vimeo.com/1133154566" target="_blank" rel="noopener" aria-label="Boy&amp;Drone 영상 보기">
+          <a class="thumb" href="https://vimeo.com/1133154566" data-href="boydrone.link" target="_blank" rel="noopener" aria-label="Boy&amp;Drone 영상 보기">
             <img src="assets/boy-drone.jpg" alt="Boy&amp;Drone 시네마틱 스틸" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://vumbnail.com/1133154566.jpg'}else{this.parentElement.classList.add('missing');this.remove()}">
-            <span class="ph">assets/boy-drone.jpg</span>
+            <!-- 썸네일 파일: assets/boy-drone.jpg -->
+            <span class="ph">영상 보기</span>
           </a>
-          <div class="work-top"><span>Dawera Academy</span><span>2025</span></div>
-          <h3>Boy&amp;Drone</h3>
-          <p>ZBrush 캐릭터 조형, Marvelous Designer 의상, XGen 헤어, FK/IK 리깅을 거쳐 Maya와 Unreal을 병행해 라이팅하고 Nuke로 합성한 11개월 제너럴 포트폴리오입니다.</p>
-          <div class="work-foot"><span>Maya, UE5, ZBrush, Substance, Nuke</span><span><b>역할</b> 모델링부터 합성까지</span></div>
-          <a class="work-link" href="https://vimeo.com/1133154566" target="_blank" rel="noopener">영상 보기</a>
+          <div class="work-top"><span data-c="boydrone.client">Dawera Academy</span><span data-c="boydrone.year">2025</span></div>
+          <h3 data-c="boydrone.title">Boy&amp;Drone</h3>
+          <p data-c="boydrone.desc">ZBrush 캐릭터 조형, Marvelous Designer 의상, XGen 헤어, FK/IK 리깅을 거쳐 Maya와 Unreal을 병행해 라이팅하고 Nuke로 합성한 11개월 제너럴 포트폴리오입니다.</p>
+          <div class="work-foot"><span data-c="boydrone.tools">Maya, UE5, ZBrush, Substance, Nuke</span><span><b>역할</b> <span data-c="boydrone.role">모델링부터 합성까지</span></span></div>
+          <a class="work-link" href="https://vimeo.com/1133154566" data-href="boydrone.link" target="_blank" rel="noopener">영상 보기</a>
         </article>
-
         <article class="work">
-          <a class="thumb" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" target="_blank" rel="noopener" aria-label="it's Live 영상 보기">
+          <a class="thumb" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" data-href="itslive.link" target="_blank" rel="noopener" aria-label="it&#x27;s Live 영상 보기">
             <img src="https://img.youtube.com/vi/7SuDLDHfoPQ/hqdefault.jpg" alt="it's Live 시네마틱 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
-            <span class="ph">썸네일을 불러오지 못했어요</span>
+            <!-- 썸네일 파일: https://img.youtube.com/vi/7SuDLDHfoPQ/hqdefault.jpg -->
+            <span class="ph">영상 보기</span>
           </a>
-          <div class="work-top"><span>AURORA WORLD, OWIS</span><span>2026</span></div>
-          <h3>it's Live</h3>
-          <p>Sequencer로 카메라 컷을 구성해 시네마틱을 제작하고, Control Rig 기반 키프레임 보정과 캐릭터 애니메이션 클린업, 콘텐츠 품질 검수를 맡았습니다.</p>
-          <div class="work-foot"><span>UE5 Sequencer, Control Rig</span><span><b>역할</b> 시네마틱, 애니메이션 보정</span></div>
-          <a class="work-link" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" target="_blank" rel="noopener">영상 보기</a>
+          <div class="work-top"><span data-c="itslive.client">AURORA WORLD, OWIS</span><span data-c="itslive.year">2026</span></div>
+          <h3 data-c="itslive.title">it&#x27;s Live</h3>
+          <p data-c="itslive.desc">Sequencer로 카메라 컷을 구성해 시네마틱을 제작하고, Control Rig 기반 키프레임 보정과 캐릭터 애니메이션 클린업, 콘텐츠 품질 검수를 맡았습니다.</p>
+          <div class="work-foot"><span data-c="itslive.tools">UE5 Sequencer, Control Rig</span><span><b>역할</b> <span data-c="itslive.role">시네마틱, 애니메이션 보정</span></span></div>
+          <a class="work-link" href="https://www.youtube.com/watch?v=7SuDLDHfoPQ" data-href="itslive.link" target="_blank" rel="noopener">영상 보기</a>
         </article>
-
         <article class="work">
-          <a class="thumb" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" target="_blank" rel="noopener" aria-label="PMV 영상 보기">
+          <a class="thumb" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" data-href="pmv.link" target="_blank" rel="noopener" aria-label="PMV 영상 보기">
             <img src="assets/pmv.jpg" alt="PMV 뮤직비디오 스틸" onerror="this.parentElement.classList.add('missing');this.remove()">
-            <span class="ph">assets/pmv.jpg</span>
+            <!-- 썸네일 파일: assets/pmv.jpg -->
+            <span class="ph">영상 보기</span>
           </a>
-          <div class="work-top"><span>AURORA WORLD, OWIS</span><span>2026</span></div>
-          <h3>PMV</h3>
-          <p>같은 모캡 파이프라인 위에서 팀으로 제작한 뮤직비디오입니다. 모션 데이터 클린업, Control Rig 동작 보정, Sequencer 편집, 라이팅·렌더링 흐름을 담당했습니다.</p>
-          <div class="work-foot"><span>MotionBuilder, UE5</span><span><b>역할</b> 팀 프로젝트</span></div>
-          <a class="work-link" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" target="_blank" rel="noopener">영상 보기</a>
+          <div class="work-top"><span data-c="pmv.client">AURORA WORLD, OWIS</span><span data-c="pmv.year">2026</span></div>
+          <h3 data-c="pmv.title">PMV</h3>
+          <p data-c="pmv.desc">같은 모캡 파이프라인 위에서 팀으로 제작한 뮤직비디오입니다. 모션 데이터 클린업, Control Rig 동작 보정, Sequencer 편집, 라이팅·렌더링 흐름을 담당했습니다.</p>
+          <div class="work-foot"><span data-c="pmv.tools">MotionBuilder, UE5</span><span><b>역할</b> <span data-c="pmv.role">팀 프로젝트</span></span></div>
+          <a class="work-link" href="https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view" data-href="pmv.link" target="_blank" rel="noopener">영상 보기</a>
         </article>
-
       </div>
       <div class="more">
-        <h3>More work</h3>
+        <h3 data-c="more.title">More work</h3>
         <ul>
-          <li><a href="https://www.youtube.com/watch?v=GLRHbtUxuYs&amp;t=448s" target="_blank" rel="noopener"><span><span class="more-title">우쥬레코드</span><span class="more-desc">UE5 콘텐츠 제작 참여. Sequencer 편집, 음원 싱크, Hair·Cloth 시뮬레이션 베이크, 라이팅·렌더링</span></span><span class="more-meta">OWIS, 2026</span></a></li>
-          <li><a href="https://www.youtube.com/@OWIS_Official/streams" target="_blank" rel="noopener"><span><span class="more-title">OWIS 라이브 방송</span><span class="more-desc">라이브 세팅 및 모션캡처 오퍼레이터</span></span><span class="more-meta">OWIS, 2026</span></a></li>
-          <li><a href="https://www.behance.net/gallery/227900501" target="_blank" rel="noopener"><span><span class="more-title">NOMOS</span><span class="more-desc">동아리 협업 프로젝트 영상 파트 담당. 전달받은 3D·2D 소스로 After Effects 영상 제작</span></span><span class="more-meta">LFD, 2025</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=GLRHbtUxuYs&amp;t=448s" data-href="wjrecord.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="wjrecord.title">우쥬레코드</span><span class="more-desc" data-c="wjrecord.desc">UE5 콘텐츠 제작 참여. Sequencer 편집, 음원 싱크, Hair·Cloth 시뮬레이션 베이크, 라이팅·렌더링</span></span><span class="more-meta" data-c="wjrecord.meta">OWIS, 2026</span></a></li>
+          <li><a href="https://www.youtube.com/@OWIS_Official/streams" data-href="live.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="live.title">OWIS 라이브 방송</span><span class="more-desc" data-c="live.desc">라이브 세팅 및 모션캡처 오퍼레이터</span></span><span class="more-meta" data-c="live.meta">OWIS, 2026</span></a></li>
+          <li><a href="https://www.behance.net/gallery/227900501" data-href="nomos.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="nomos.title">NOMOS</span><span class="more-desc" data-c="nomos.desc">동아리 협업 프로젝트 영상 파트 담당. 전달받은 3D·2D 소스로 After Effects 영상 제작</span></span><span class="more-meta" data-c="nomos.meta">LFD, 2025</span></a></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Pipeline -->
   <section id="pipeline">
     <div class="wrap">
-      <div class="sec-head"><h2>5인 실시간 모캡 파이프라인 운영</h2><span>OWIS, 2026</span></div>
+      <div class="sec-head"><h2 data-c="pipeline.title">5인 실시간 모캡 파이프라인 운영</h2><span data-c="pipeline.sub">OWIS, 2026</span></div>
       <div class="pipe">
         <div class="stage">
           <span class="n">1</span>
-          <h3>OptiTrack Motive 3.4</h3>
-          <ul><li>멤버별 Skeleton 생성</li><li>Unicast 스트리밍</li><li>세션별 ROM 캘리브레이션</li></ul>
+          <h3 data-c="stage1.title">OptiTrack Motive 3.4</h3>
+          <ul data-c="stage1.items" data-list><li>멤버별 Skeleton 생성</li><li>Unicast 스트리밍</li><li>세션별 ROM 캘리브레이션</li></ul>
         </div>
         <div class="stage">
           <span class="n">2</span>
-          <h3>MotionBuilder 2024</h3>
-          <ul><li>OptiTrack Skeleton Plugin으로 Actor 수신</li><li>멤버별 HIK Character 1:1 리타겟팅</li><li>Live Link 송출</li></ul>
+          <h3 data-c="stage2.title">MotionBuilder 2024</h3>
+          <ul data-c="stage2.items" data-list><li>OptiTrack Skeleton Plugin으로 Actor 수신</li><li>멤버별 HIK Character 1:1 리타겟팅</li><li>Live Link 송출</li></ul>
         </div>
         <div class="stage">
           <span class="n">3</span>
-          <h3>Unreal Engine 5</h3>
-          <ul><li>Live Link 수신, MetaHuman 적용</li><li>Live Link Pose 기반 AnimBP 구동</li><li>Manus 핑거 데이터 별도 Subject 매핑</li></ul>
+          <h3 data-c="stage3.title">Unreal Engine 5</h3>
+          <ul data-c="stage3.items" data-list><li>Live Link 수신, MetaHuman 적용</li><li>Live Link Pose 기반 AnimBP 구동</li><li>Manus 핑거 데이터 별도 Subject 매핑</li></ul>
         </div>
       </div>
       <div class="pipe-extra">
-        <div><h4>세션 운영</h4><p>세션 체크리스트 운영, 씬·프로파일·캘리브레이션 파일 버전 관리.</p></div>
-        <div><h4>트러블슈팅</h4><p>IP·포트·방화벽 연결 문제, Subject Name 불일치, T-Pose·Characterize 문제 대응.</p></div>
+        <div><h4 data-c="ops.title">세션 운영</h4><p data-c="ops.desc">세션 체크리스트 운영, 씬·프로파일·캘리브레이션 파일 버전 관리.</p></div>
+        <div><h4 data-c="trouble.title">트러블슈팅</h4><p data-c="trouble.desc">IP·포트·방화벽 연결 문제, Subject Name 불일치, T-Pose·Characterize 문제 대응.</p></div>
       </div>
-      <p style="margin-top:1.5rem"><a class="work-link" href="https://www.youtube.com/@OWIS_Official/streams" target="_blank" rel="noopener">이 파이프라인으로 진행한 라이브 방송 보기</a></p>
+      <p style="margin-top:1.5rem"><a class="work-link" href="https://www.youtube.com/@OWIS_Official/streams" data-href="pipeline.live.link" target="_blank" rel="noopener" data-c="pipeline.live">이 파이프라인으로 진행한 라이브 방송 보기</a></p>
     </div>
   </section>
 
-  <!-- Profile -->
   <section id="profile">
     <div class="wrap profile-grid">
-      <blockquote>캡처 데이터가 최종 화면이 되기까지, 그 흐름 전체를 다뤄본 제너럴리스트입니다.</blockquote>
+      <blockquote data-c="profile.quote">캡처 데이터가 최종 화면이 되기까지, 그 흐름 전체를 다뤄본 제너럴리스트입니다.</blockquote>
       <div class="profile-body">
-        <p>다워라 아카데미에서 모델링, 텍스처링, 리깅, 라이팅, 합성까지 3D 제너럴 파이프라인을 학습하고 포트폴리오를 완성했습니다.</p>
-        <p>이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 3D 업무 전반을 맡았고, 특히 5인 실시간 모션캡처 파이프라인 운영을 담당했습니다.</p>
-        <dl class="facts">
-          <div><dt>Based in</dt><dd>Seoul, KR</dd></div>
-          <div><dt>Status</dt><dd>Open to work</dd></div>
-          <div><dt>Main tools</dt><dd>Maya, MotionBuilder, UE5</dd></div>
-          <div><dt>Capture</dt><dd>OptiTrack Motive, Manus</dd></div>
-        </dl>
+        <p data-c="profile.p1">다워라 아카데미에서 모델링, 텍스처링, 리깅, 라이팅, 합성까지 3D 제너럴 파이프라인을 학습하고 포트폴리오를 완성했습니다.</p>
+        <p data-c="profile.p2">이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 3D 업무 전반을 맡았고, 특히 5인 실시간 모션캡처 파이프라인 운영을 담당했습니다.</p>
+        <dl class="facts"><div><dt data-c="fact1.label">Based in</dt><dd data-c="fact1.value">Seoul, KR</dd></div><div><dt data-c="fact2.label">Status</dt><dd data-c="fact2.value">Open to work</dd></div><div><dt data-c="fact3.label">Main tools</dt><dd data-c="fact3.value">Maya, MotionBuilder, UE5</dd></div><div><dt data-c="fact4.label">Capture</dt><dd data-c="fact4.value">OptiTrack Motive, Manus</dd></div></dl>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>함께 만들<br>작업이 있다면.</h2>
-      <a class="mail" href="mailto:chaehyun727@gmail.com">chaehyun727@gmail.com</a>
+      <h2 data-c="contact.title" data-br>E-Mail</h2>
+      <a class="mail" href="mailto:chaehyun727@gmail.com" data-c="contact.email" data-mail>chaehyun727@gmail.com</a>
       <div class="socials">
-        <!-- TODO: ArtStation 등 계정이 생기면 여기 추가 -->
-        <a href="https://www.behance.net/7957df51" target="_blank" rel="noopener">Behance</a>
-        <a href="https://vimeo.com/1133154566" target="_blank" rel="noopener">Vimeo</a>
+        <a href="https://www.behance.net/7957df51" data-href="social1.link" target="_blank" rel="noopener" data-c="social1">Behance</a>
+        <a href="https://vimeo.com/1133154566" data-href="social2.link" target="_blank" rel="noopener" data-c="social2">Vimeo</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap"><span>© 2026 Kim Chaehyun</span><a href="#top">맨 위로</a></div>
+  <div class="wrap"><span data-c="footer">© Kim Chaehyun</span><a href="#top">맨 위로</a></div>
 </footer>
 
+<script>
+/* content.md를 읽어서 data-c / data-href 요소의 문구·링크를 교체.
+   파일을 못 읽으면(로컬에서 파일로 열 때 등) HTML에 적힌 기본 문구가 그대로 보임. */
+(function(){
+  function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function parse(md){
+    var map={},key=null,buf=[];
+    md.replace(/^\uFEFF/,'').replace(/<!--[\s\S]*?-->/g,'').split(/\r?\n/).forEach(function(line){
+      var m=line.match(/^##\s+(\S+)/);
+      if(m){ if(key!==null) map[key]=buf.join('\n').trim(); key=m[1]; buf=[]; }
+      else if(key!==null && !/^#\s/.test(line)) buf.push(line);
+    });
+    if(key!==null) map[key]=buf.join('\n').trim();
+    Object.keys(map).forEach(function(k){ map[k]=map[k].replace(/\\(.)/g,'$1'); });
+    return map;
+  }
+  function lines(v){return v.split('\n').map(function(s){return s.replace(/^[-*\u2022]\s*/,'').trim()}).filter(Boolean)}
+  fetch('content.md',{cache:'no-cache'})
+    .then(function(r){ if(!r.ok) throw new Error('content.md '+r.status); return r.text(); })
+    .then(function(md){
+      var c=parse(md);
+      document.querySelectorAll('[data-c]').forEach(function(el){
+        var v=c[el.dataset.c]; if(!v) return;
+        if(el.hasAttribute('data-list')) el.innerHTML=lines(v).map(function(x){return '<li>'+esc(x)+'</li>'}).join('');
+        else if(el.hasAttribute('data-marquee')){ var h=lines(v).map(function(x){return '<span>'+esc(x)+'</span>'}).join(''); el.innerHTML=h+h; }
+        else if(el.hasAttribute('data-br')) el.innerHTML=esc(v).replace(/\n/g,'<br>');
+        else if(el.hasAttribute('data-rich')) el.innerHTML=esc(v.replace(/\n/g,' ')).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+        else el.textContent=v.replace(/\n/g,' ');
+      });
+      document.querySelectorAll('[data-href]').forEach(function(el){ var v=c[el.dataset.href]; if(v) el.href=v.trim(); });
+      if(c['contact.email']) document.querySelectorAll('[data-mail]').forEach(function(el){ el.href='mailto:'+c['contact.email'].trim(); });
+    })
+    .catch(function(err){ console.warn('문구 파일을 불러오지 못해 기본 문구를 사용합니다:',err); });
+})();
+</script>
 </body>
 </html>
