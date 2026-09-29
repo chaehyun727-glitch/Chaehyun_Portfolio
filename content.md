@@ -19,7 +19,7 @@ Portfolio 2026, Seoul
 김채현, 3D Generalist
 
 ## hero.role    <- 소개 문장. **두 별표** 사이는 강조색
-모델링부터 렌더링까지 다루고, **5인 실시간 모션캡처 파이프라인**을 운영해본 제너럴리스트.
+모델링부터 렌더링까지 다루고, **멤버 5인의 실시간 모캡 파이프라인**을 운영해본 제너럴리스트.
 
 ## hero.button    <- 노란 버튼 글자
 대표작 SuperNatural 보기
@@ -189,13 +189,13 @@ NOMOS
 LFD, 2025
 
 ## nomos.link    <- 링크 주소
-https://www.behance.net/gallery/227900501
+https://www.behance.net/gallery/227900501/Nomos-AR-Handheld-Combi-for-the-Only-Journey
 
 
 # ========== 파이프라인 섹션 ==========
 
 ## pipeline.title    <- 제목
-5인 실시간 모캡 파이프라인 운영
+멤버 5인 실시간 모캡 파이프라인 운영
 
 ## pipeline.sub    <- 제목 오른쪽 작은 글씨
 OWIS, 2026
@@ -252,7 +252,7 @@ https://www.youtube.com/@OWIS_Official/streams
 다워라 아카데미에서 모델링, 텍스처링, 리깅, 라이팅, 합성까지 3D 제너럴 파이프라인을 학습하고 포트폴리오를 완성했습니다.
 
 ## profile.p2    <- 둘째 문단
-이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 3D 업무 전반을 맡았고, 특히 5인 실시간 모션캡처 파이프라인 운영을 담당했습니다.
+이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 모션 데이터 클린업과 애니메이션 보정, 시네마틱 제작과 라이팅·렌더링을 맡았고, 특히 멤버 5인의 실시간 모션캡처 파이프라인 운영을 담당했습니다.
 
 ## fact1.label    <- 항목 이름
 Based in
@@ -282,7 +282,7 @@ OptiTrack Motive, Manus
 # ========== 연락처 섹션 ==========
 
 ## contact.title    <- 줄바꿈하면 사이트에서도 줄바꿈
-E-Mail
+Mail
 
 ## contact.email    <- 메일 주소 (버튼 링크도 같이 바뀜)
 chaehyun727@gmail.com
