@@ -80,6 +80,12 @@
   .work a.thumb{display:block;aspect-ratio:16/9;background:var(--surface);border-radius:4px;overflow:hidden;position:relative;text-decoration:none}
   .work a.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
   .work a.thumb:hover img{transform:scale(1.03)}
+  /* 재생 표시 (영상 클릭 유도) */
+  .work a.thumb::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(27,30,35,.55);border:1px solid rgba(235,232,226,.75);transition:background .25s ease,border-color .25s ease}
+  .work a.thumb::before{content:"";position:absolute;z-index:1;left:50%;top:50%;transform:translate(-35%,-50%);border-left:16px solid var(--text);border-top:10px solid transparent;border-bottom:10px solid transparent;transition:border-left-color .25s ease}
+  .work a.thumb:hover::after{background:var(--accent);border-color:var(--accent)}
+  .work a.thumb:hover::before{border-left-color:#1b1e23}
+  .work a.thumb.missing::after,.work a.thumb.missing::before{display:none}
   .thumb .ph{position:absolute;inset:0;display:none;place-items:center;color:var(--muted);font-size:.85rem;text-align:center;padding:1rem;border:1px dashed var(--line);border-radius:4px}
   .thumb.missing .ph{display:grid}
   .work-top{display:flex;justify-content:space-between;margin-top:1.1rem;color:var(--muted);font-size:.88rem}
@@ -164,7 +170,7 @@
     <div class="wrap">
       <p class="hero-meta" data-c="hero.meta">Portfolio 2026, Seoul</p>
       <h1>Kim<br>Chaehyun<span class="ko" data-c="hero.subtitle">김채현, 3D Generalist</span></h1>
-      <p class="hero-role" data-c="hero.role" data-rich>모델링부터 렌더링까지 다루고, <strong>5인 실시간 모션캡처 파이프라인</strong>을 운영해본 제너럴리스트.</p>
+      <p class="hero-role" data-c="hero.role" data-rich>모델링부터 렌더링까지 다루고, <strong>멤버 5인의 실시간 모캡 파이프라인</strong>을 운영해본 제너럴리스트.</p>
       <div class="hero-cta">
         <a class="btn solid" href="https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view" data-href="hero.button.link" target="_blank" rel="noopener" data-c="hero.button">대표작 SuperNatural 보기</a>
         <a class="btn" href="#work" data-c="hero.button2">작업 보기</a>
@@ -234,7 +240,7 @@
         <ul>
           <li><a href="https://www.youtube.com/watch?v=GLRHbtUxuYs&amp;t=448s" data-href="wjrecord.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="wjrecord.title">우쥬레코드</span><span class="more-desc" data-c="wjrecord.desc">UE5 콘텐츠 제작 참여. Sequencer 편집, 음원 싱크, Hair·Cloth 시뮬레이션 베이크, 라이팅·렌더링</span></span><span class="more-meta" data-c="wjrecord.meta">OWIS, 2026</span></a></li>
           <li><a href="https://www.youtube.com/@OWIS_Official/streams" data-href="live.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="live.title">OWIS 라이브 방송</span><span class="more-desc" data-c="live.desc">라이브 세팅 및 모션캡처 오퍼레이터</span></span><span class="more-meta" data-c="live.meta">OWIS, 2026</span></a></li>
-          <li><a href="https://www.behance.net/gallery/227900501" data-href="nomos.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="nomos.title">NOMOS</span><span class="more-desc" data-c="nomos.desc">동아리 협업 프로젝트 영상 파트 담당. 전달받은 3D·2D 소스로 After Effects 영상 제작</span></span><span class="more-meta" data-c="nomos.meta">LFD, 2025</span></a></li>
+          <li><a href="https://www.behance.net/gallery/227900501/Nomos-AR-Handheld-Combi-for-the-Only-Journey" data-href="nomos.link" target="_blank" rel="noopener"><span><span class="more-title" data-c="nomos.title">NOMOS</span><span class="more-desc" data-c="nomos.desc">동아리 협업 프로젝트 영상 파트 담당. 전달받은 3D·2D 소스로 After Effects 영상 제작</span></span><span class="more-meta" data-c="nomos.meta">LFD, 2025</span></a></li>
         </ul>
       </div>
     </div>
@@ -242,7 +248,7 @@
 
   <section id="pipeline">
     <div class="wrap">
-      <div class="sec-head"><h2 data-c="pipeline.title">5인 실시간 모캡 파이프라인 운영</h2><span data-c="pipeline.sub">OWIS, 2026</span></div>
+      <div class="sec-head"><h2 data-c="pipeline.title">멤버 5인 실시간 모캡 파이프라인 운영</h2><span data-c="pipeline.sub">OWIS, 2026</span></div>
       <div class="pipe">
         <div class="stage">
           <span class="n">1</span>
@@ -273,7 +279,7 @@
       <blockquote data-c="profile.quote">캡처 데이터가 최종 화면이 되기까지, 그 흐름 전체를 다뤄본 제너럴리스트입니다.</blockquote>
       <div class="profile-body">
         <p data-c="profile.p1">다워라 아카데미에서 모델링, 텍스처링, 리깅, 라이팅, 합성까지 3D 제너럴 파이프라인을 학습하고 포트폴리오를 완성했습니다.</p>
-        <p data-c="profile.p2">이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 3D 업무 전반을 맡았고, 특히 5인 실시간 모션캡처 파이프라인 운영을 담당했습니다.</p>
+        <p data-c="profile.p2">이후 오로라월드 버추얼 아이돌 OWIS 프로젝트에서 6개월간 모션 데이터 클린업과 애니메이션 보정, 시네마틱 제작과 라이팅·렌더링을 맡았고, 특히 멤버 5인의 실시간 모션캡처 파이프라인 운영을 담당했습니다.</p>
         <dl class="facts"><div><dt data-c="fact1.label">Based in</dt><dd data-c="fact1.value">Seoul, KR</dd></div><div><dt data-c="fact2.label">Status</dt><dd data-c="fact2.value">Open to work</dd></div><div><dt data-c="fact3.label">Main tools</dt><dd data-c="fact3.value">Maya, MotionBuilder, UE5</dd></div><div><dt data-c="fact4.label">Capture</dt><dd data-c="fact4.value">OptiTrack Motive, Manus</dd></div></dl>
       </div>
     </div>
@@ -281,7 +287,7 @@
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2 data-c="contact.title" data-br>E-Mail</h2>
+      <h2 data-c="contact.title" data-br>Mail</h2>
       <a class="mail" href="mailto:chaehyun727@gmail.com" data-c="contact.email" data-mail>chaehyun727@gmail.com</a>
       <div class="socials">
         <a href="https://www.behance.net/7957df51" data-href="social1.link" target="_blank" rel="noopener" data-c="social1">Behance</a>
