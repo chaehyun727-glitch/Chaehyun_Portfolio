@@ -25,7 +25,7 @@ Portfolio 2026, Seoul
 대표작 SuperNatural 보기
 
 ## hero.button.link    <- 노란 버튼 링크
-https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view
+https://www.youtube.com/watch?v=Fg441uQE13M
 
 ## hero.button2    <- 테두리 버튼 글자
 작업 보기
@@ -81,7 +81,7 @@ MotionBuilder, UE5, Kawaii Physics
 캡처 데이터부터 렌더링까지 단독
 
 ## supernatural.link    <- 영상 링크
-https://drive.google.com/file/d/1x3WrFLnJbpYhpm_nBxxumQ7j1OzVcLm8/view
+https://www.youtube.com/watch?v=Fg441uQE13M
 
 
 # ========== 작업 2: Boy&Drone ==========
@@ -153,7 +153,7 @@ MotionBuilder, UE5
 팀 프로젝트
 
 ## pmv.link    <- 영상 링크
-https://drive.google.com/file/d/1ihpEyyvY1F6UaLwgD8gtJeapc7Dw0BDp/view
+https://youtu.be/Sp0Z_dLlJDo
 
 
 # ========== More work 목록 ==========
